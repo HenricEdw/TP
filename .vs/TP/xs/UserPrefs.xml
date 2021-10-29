@@ -1,0 +1,46 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{C02CFA4C-4523-4C52-896D-0C56EFD53C64}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TP/Views/Users/Index.cshtml">
+    <Files>
+      <File FileName="TP/Data/ApplicationDbContext.cs" Line="13" Column="28" />
+      <File FileName="TP/Startup.cs" Line="35" Column="68" />
+      <File FileName="TP/Migrations/20211029072308_InitialCreate.cs" Line="1" Column="1" />
+      <File FileName="TP/Areas/Identity/Pages/Account/Register.cshtml" Line="19" Column="19" />
+      <File FileName="TP/Areas/Identity/Pages/Account/Register.cshtml.cs" Line="31" Column="42" />
+      <File FileName="TP/Controllers/UsersController.cs" Line="1" Column="1" />
+      <File FileName="TP/Views/Users/Index.cshtml" Line="8" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TP" expanded="True">
+            <Node name="TP" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True">
+                    <Node name="Account" expanded="True">
+                      <Node name="Register.cshtml" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Users" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.TP PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

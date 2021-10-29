@@ -1,0 +1,41 @@
+@model IEnumerable<TP.Models.Company>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.strCompanyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.discountID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.strCompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.discountID)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.companyID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.companyID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.companyID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

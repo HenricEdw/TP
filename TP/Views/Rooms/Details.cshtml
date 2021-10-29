@@ -1,0 +1,30 @@
+@model TP.Models.Room
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Room</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.roomName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.roomName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.priceID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.priceID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.roomID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
