@@ -487,3 +487,4 @@
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ViewImports.cshtml.g.cs
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Views/Users/Index.cshtml.g.cs
+/Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Views/Users/Admin.cshtml.g.cs

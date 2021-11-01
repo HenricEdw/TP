@@ -8179,7 +8179,7 @@
       "outputPath": "/Users/savi/Projects/TP/TP/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Savi/.nuget/NuGet/NuGet.Config"
+        "/Users/Savi/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

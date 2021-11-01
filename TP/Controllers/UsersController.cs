@@ -15,5 +15,10 @@ namespace TP.Controllers
         {
             return View();
         }
+
+        public IActionResult Admin()
+        {
+            return View();
+        }
     }
 }
