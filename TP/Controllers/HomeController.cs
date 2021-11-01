@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using TP.Models;
@@ -20,6 +21,7 @@ namespace TP.Controllers
 
 
         //Redirect to LOGIN
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
