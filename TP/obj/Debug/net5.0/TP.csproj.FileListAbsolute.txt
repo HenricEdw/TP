@@ -481,7 +481,6 @@
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Views/Rooms/Edit.cshtml.g.cs
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/Login.cshtml.g.cs
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/Logout.cshtml.g.cs
-/Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/Register.cshtml.g.cs
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/_ViewImports.cshtml.g.cs
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml.g.cs
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ViewImports.cshtml.g.cs
@@ -990,4 +989,5 @@ C:/Users/Victor/Dropbox/Min PC (LAPTOP-HD1HTEK4)/Desktop/TP&Bvisa/TP/TP/obj/Debu
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Views/Shared/AdminLTE/_MainNavigation.cshtml.g.cs
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Views/Shared/AdminLTE/_Scripts.cshtml.g.cs
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Views/Shared/AdminLTE/_Styles.cshtml.g.cs
+/Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/Register.cshtml.g.cs
 /Users/savi/Projects/TP/TP/obj/Debug/net5.0/Razor/Views/Shared/AdminLTE/_TopNavigation.cshtml.g.cs

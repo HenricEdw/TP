@@ -7,8 +7,11 @@ namespace TP.Models
     {
         public int companyID { get; set; }
 
-        [Display(Name ="Company Name")]
+        [Display(Name ="Företagsnamn")]
         public string strCompanyName { get; set; }
+
+
+        [Display(Name = "Företagsrabatt")]
         public int discountID { get; set; }
       
     }

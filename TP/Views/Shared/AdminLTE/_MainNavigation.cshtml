@@ -73,6 +73,8 @@
                     <li class="nav-item d-none d-sm-inline-block">
                         <a asp-area="Identity" asp-page="/Account/Register" class="nav-link">Register</a>
                     </li>
+
+
                 }
                 @if (_SignInManager.IsSignedIn(User) && await _UserManager.IsInRoleAsync(_UserManager.GetUserAsync(User).Result, "admin"))
                 {
@@ -86,6 +88,9 @@
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <a asp-controller="Users" asp-action="Index" class="nav-link">Användare</a>
+                    </li>
                 }
 
 
@@ -93,23 +98,33 @@
                 {
                     <li class="nav-item ">
                         <a asp-controller="Home" asp-action="Privacy" class="nav-link @Url.MakeActiveClass("home","privacy")">
-                            <i class="nav-icon fas fa-lock"></i>    
+                            <i class="nav-icon fas fa-lock"></i>
                             <p>
                                 Privacy
                             </p>
                         </a>
                     </li>
+
                 }
                 @*<li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">
-                            <p>Register user</p>
-                        </a>
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">
+                <p>Register user</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">
+                <p>Login</p>
+            </a>
+        </li>*@
+
+
+                @if (_SignInManager.IsSignedIn(User) && await _UserManager.IsInRoleAsync(_UserManager.GetUserAsync(User).Result, "admin"))
+                {
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <a asp-controller="Companies" asp-action="Index">Företag</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">
-                            <p>Login</p>
-                        </a>
-                    </li>*@
+                }
+
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
