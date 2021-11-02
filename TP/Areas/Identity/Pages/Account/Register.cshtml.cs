@@ -48,19 +48,33 @@ namespace TP.Areas.Identity.Pages.Account
         {
             [Required]
             [EmailAddress]
-            [Display(Name = "Email")]
+            [Display(Name = "Epost")]
             public string Email { get; set; }
 
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "Lösenord")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
+            [Display(Name = "Bekräfta lösenord")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            [Display(Name = "Förnamn")]
+            public string FirstName { get; set; }
+
+            [Display(Name = "Efternamn")]
+            public string LastName { get; set; }
+
+            [Display(Name = "Företag")]
+            public int CompanyID { get; set; }
+
+            [DataType(DataType.PhoneNumber)]
+            [Display(Name = "Telefonnummer")]
+            public string PhoneNumber { get; set; }
+
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -75,7 +89,7 @@ namespace TP.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new User { UserName = Input.Email, Email = Input.Email };
+                var user = new User { UserName = Input.Email, Email = Input.Email, firstName = Input.FirstName, lastName= Input.LastName, intCompany= Input.CompanyID, PhoneNumber= Input.PhoneNumber };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

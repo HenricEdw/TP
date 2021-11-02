@@ -1,7 +1,8 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@using static testadminLTE.Helpers.NavigationIndicatorHelper;
+
+@using static TP.Helpers.NavigationIndicatorHelper;
 @using Microsoft.AspNetCore.Identity
 @using Microsoft.AspNetCore
 
@@ -60,7 +61,7 @@
                 {
                     <li class="nav-item d-none d-sm-inline-block">
                         <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                            <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                            <button type="submit" class="nav-link btn btn-link">Logout</button>
                         </form>
                     </li>
                 }
@@ -79,7 +80,7 @@
 
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Bokningar">
 
-                            <i class="nav-icon fas fa-lock"></i>
+                            <i class="fas fa-user-tie"></i>
                             <p>
                                 Admin
                             </p>

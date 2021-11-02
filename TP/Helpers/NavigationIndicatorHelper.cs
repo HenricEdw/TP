@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace testadminLTE.Helpers
+namespace TP.Helpers
 {
     public static class NavigationIndicatorHelper
     {
